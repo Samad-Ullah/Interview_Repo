@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_1</title>
+</head>
+
+<body>
+    <script>
+
+        function SecondLargestNumber(arr, arr_size) {
+
+
+            if (arr_size > 2) {
+
+                console.log("invalid");
+
+            }
+            arr.sort();
+
+            console.log(arr.sort());
+
+            for (var i = arr_size - 2; i >= 0; i--) {
+
+                if (arr[i] != arr[arr_size - 1]) {
+                    
+                    console.log("Second largest number is ", arr[i])
+                }
+            }
+
+            SecondLargestNumber([6, 12, 10], 3)
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>
